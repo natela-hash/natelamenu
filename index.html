@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ნათელას ქლინ სერვისი</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="ლოგო" />
+      ნათელას ქლინ სერვისი
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="main-menu">
+      <ul>
+        <li><a id="nav-home" href="#">მთავარი</a></li>
+        <li><a id="nav-services" href="#">სერვისები</a></li>
+        <li><a id="nav-contact" href="#">კონტაქტი</a></li>
+        <li>
+          <select id="languageSwitcher">
+            <option value="ka" selected>🇬🇪 ქართული</option>
+            <option value="en">🇬🇧 English</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>სისუფთავე ჩვენი საქმეა</h1>
+      <button id="bookVisit">ვიზიტის ჩანიშვნა</button>
+    </section>
+  </main>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>ვიზიტის ფორმა</h2>
+      <form>
+        <input type="text" placeholder="სახელი" required />
+        <input type="email" placeholder="ელ. ფოსტა" required />
+        <input type="tel" placeholder="ტელეფონი" required />
+        <button type="submit">გაგზავნა</button>
+      </form>
+    </div>
+  </div>
+  <div class="social-icons">
+    <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+    <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+    <a href="#"><img src="images/tiktok.png" alt="TikTok" /></a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
