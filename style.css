@@ -118,19 +118,8 @@ button {
 .menu-toggle {
     display: block;
   }
-  #main-menu {
-    display: none;
-    flex-direction: column;
-    background: #1a1a1a;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 1rem;
-  }
-  #main-menu.active {
-    display: flex;
-  }
+  
+  
 }
 
 
@@ -141,18 +130,22 @@ button {
     color: white;
   }
 
-  #main-menu {
-    display: none;
-    flex-direction: column;
-    background: #1a1a1a;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 1rem;
-  }
+  
 
-  #main-menu.active {
-    display: flex;
-  }
+  
+}
+
+#main-menu {
+  display: none;
+  flex-direction: column;
+  background: #1a1a1a;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  padding: 1rem;
+  z-index: 999;
+}
+#main-menu.active {
+  display: flex;
 }
